@@ -15,7 +15,7 @@ import com.target.targetcasestudy.presentation.dealslist.ui.uimodels.DealsItemUi
 
 class DealsItemViewHolder(
     private val view: View,
-    private val dealsListPageListeners: DealListPageListeners?
+    private val dealsListPageListeners: DealListPageListeners
 ) : AbstractViewHolder<DealsItemUiModel>(view) {
 
     private val binding = DealListItemBinding.bind(view)
@@ -37,7 +37,7 @@ class DealsItemViewHolder(
             dealListItemImageView.loadImage(element.imageUrl)
         }
         binding.root.setOnClickListener {
-            dealsListPageListeners?.onClick(element.id, element.salePrice)
+            dealsListPageListeners.onClick(element.id, element.salePrice)
         }
     }
 

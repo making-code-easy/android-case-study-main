@@ -3,10 +3,10 @@ package com.target.targetcasestudy.presentation.common
 import android.view.LayoutInflater
 import android.view.ViewGroup
 import androidx.recyclerview.widget.ListAdapter
-import com.target.targetcasestudy.presentation.common.adpaterfactory.DealsAdapterFactory
+import com.target.targetcasestudy.presentation.common.adpaterfactory.BaseDealsAdapterFactory
 import com.target.targetcasestudy.presentation.common.viewholder.AbstractViewHolder
 
-class DealsAdapter(private val dealsAdapterFactory: DealsAdapterFactory) :
+class DealsAdapter(private val dealsAdapterFactory: BaseDealsAdapterFactory) :
     ListAdapter<BaseDealsUiModel, AbstractViewHolder<*>>(DiffUtil()) {
     override fun onCreateViewHolder(parent: ViewGroup, viewType: Int): AbstractViewHolder<*> {
         val view = LayoutInflater.from(parent.context).inflate(viewType, parent, false)

@@ -14,8 +14,8 @@ import com.target.targetcasestudy.presentation.common.DealConstants.DEAL_ID
 import com.target.targetcasestudy.presentation.common.DealConstants.SALE_PRICE
 import com.target.targetcasestudy.presentation.common.DealsAdapter
 import com.target.targetcasestudy.presentation.common.DealsUiState
-import com.target.targetcasestudy.presentation.common.adpaterfactory.DealsAdapterFactoryImpl
 import com.target.targetcasestudy.presentation.common.utils.collectLatestLifecycleFlow
+import com.target.targetcasestudy.presentation.dealsdetail.adapterfactory.DealsDetailAdapterFactoryImpl
 import com.target.targetcasestudy.presentation.dealsdetail.viewmodels.DetailPageViewModel
 import dagger.hilt.android.AndroidEntryPoint
 
@@ -27,7 +27,7 @@ class DetailPageFragment : Fragment() {
     private val viewModel: DetailPageViewModel by viewModels()
     private val dealsAdapter: DealsAdapter by lazy {
         DealsAdapter(
-            DealsAdapterFactoryImpl()
+            DealsDetailAdapterFactoryImpl()
         )
     }
 

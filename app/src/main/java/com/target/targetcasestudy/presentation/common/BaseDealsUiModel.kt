@@ -1,7 +1,7 @@
 package com.target.targetcasestudy.presentation.common
 
-import com.target.targetcasestudy.presentation.common.adpaterfactory.DealsAdapterFactory
+import com.target.targetcasestudy.presentation.common.adpaterfactory.BaseDealsAdapterFactory
 
-interface BaseDealsUiModel : Visitable<DealsAdapterFactory> {
+interface BaseDealsUiModel : Visitable<BaseDealsAdapterFactory> {
     fun equalsWith(newData: BaseDealsUiModel): Boolean
 }
