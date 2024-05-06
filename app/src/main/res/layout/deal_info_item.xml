@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/deal_info_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray_color_2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:text="Product details" />
+
+    <TextView
+        android:id="@+id/deal_info_description"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:textColor="@color/gray_color_3"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/deal_info_title"
+        app:layout_constraintTop_toBottomOf="@id/deal_info_title"
+        tools:text="Adult oversized crewneck tee made from 100% cotton for soft feel and comfy wear. Tailored in an oversized silhouette with a crewneck design with short sleeves and drop shoulders. At-hip length for wearing tucked in or out.
+
+Wild Fable™: A look for every story.
+" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

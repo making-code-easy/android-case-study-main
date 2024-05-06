@@ -1,0 +1,79 @@
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/deal_list_item"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:padding="5dp">
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/deal_list_item_image_view"
+        android:layout_width="@dimen/deal_list_item_image_size"
+        android:layout_height="@dimen/deal_list_item_image_size"
+        android:layout_margin="16dp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:src="@tools:sample/avatars" />
+
+    <TextView
+        android:id="@+id/deal_list_sale_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:textColor="@color/colorPrimaryDark"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintLeft_toRightOf="@id/deal_list_item_image_view"
+        app:layout_constraintTop_toTopOf="@id/deal_list_item_image_view"
+        tools:text="$34.99" />
+
+    <TextView
+        android:id="@+id/deal_list_regular_price"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="4dp"
+        android:textColor="@color/gray_color_2"
+        android:textSize="12sp"
+        app:layout_constraintBottom_toBottomOf="@id/deal_list_sale_price"
+        app:layout_constraintStart_toEndOf="@id/deal_list_sale_price"
+        tools:text="reg. $34.99" />
+
+    <TextView
+        android:id="@+id/deal_list_status"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:textColor="@color/gray_color"
+        android:textSize="12sp"
+        app:layout_constraintStart_toStartOf="@id/deal_list_sale_price"
+        app:layout_constraintTop_toBottomOf="@id/deal_list_sale_price"
+        tools:text="Online" />
+
+    <TextView
+        android:id="@+id/deal_list_item_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:ellipsize="end"
+        android:maxLines="2"
+        android:textColor="@color/black_color"
+        android:textSize="14sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="@id/deal_list_status"
+        app:layout_constraintTop_toBottomOf="@id/deal_list_status"
+        tools:text="Women's Long Sleeve Denim Jacket - Universal Thread™" />
+
+    <TextView
+        android:id="@+id/deal_list_item_availability"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        android:textColor="@color/gray_color"
+        android:textSize="16sp"
+        app:layout_constraintStart_toStartOf="@id/deal_list_item_title"
+        app:layout_constraintTop_toBottomOf="@id/deal_list_item_title"
+        tools:text="In stock in aisle W20" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
